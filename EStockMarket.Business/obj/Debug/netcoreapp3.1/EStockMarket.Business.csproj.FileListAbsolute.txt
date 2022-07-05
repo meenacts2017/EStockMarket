@@ -1,0 +1,15 @@
+C:\EStockAPI\EStockMarket\EStockMarket.Business\obj\Debug\netcoreapp3.1\EStockMarket.Business.csproj.AssemblyReference.cache
+C:\EStockAPI\EStockMarket\EStockMarket.Business\obj\Debug\netcoreapp3.1\EStockMarket.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\EStockAPI\EStockMarket\EStockMarket.Business\obj\Debug\netcoreapp3.1\EStockMarket.Business.AssemblyInfoInputs.cache
+C:\EStockAPI\EStockMarket\EStockMarket.Business\obj\Debug\netcoreapp3.1\EStockMarket.Business.AssemblyInfo.cs
+C:\EStockAPI\EStockMarket\EStockMarket.Business\obj\Debug\netcoreapp3.1\EStockMarket.Business.csproj.CoreCompileInputs.cache
+C:\EStockAPI\EStockMarket\EStockMarket.Business\bin\Debug\netcoreapp3.1\EStockMarket.Business.deps.json
+C:\EStockAPI\EStockMarket\EStockMarket.Business\bin\Debug\netcoreapp3.1\EStockMarket.Business.dll
+C:\EStockAPI\EStockMarket\EStockMarket.Business\bin\Debug\netcoreapp3.1\EStockMarket.Business.pdb
+C:\EStockAPI\EStockMarket\EStockMarket.Business\bin\Debug\netcoreapp3.1\EStockMarket.Model.dll
+C:\EStockAPI\EStockMarket\EStockMarket.Business\bin\Debug\netcoreapp3.1\EStockMarket.Model.pdb
+C:\EStockAPI\EStockMarket\EStockMarket.Business\obj\Debug\netcoreapp3.1\EStockMarket.Business.csproj.CopyComplete
+C:\EStockAPI\EStockMarket\EStockMarket.Business\obj\Debug\netcoreapp3.1\EStockMarket.Business.dll
+C:\EStockAPI\EStockMarket\EStockMarket.Business\obj\Debug\netcoreapp3.1\EStockMarket.Business.pdb
+C:\EStockAPI\EStockMarket\EStockMarket.Business\bin\Debug\netcoreapp3.1\EStockMarket.DataAccess.dll
+C:\EStockAPI\EStockMarket\EStockMarket.Business\bin\Debug\netcoreapp3.1\EStockMarket.DataAccess.pdb
