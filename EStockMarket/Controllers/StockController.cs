@@ -39,6 +39,22 @@ namespace EStockMarket.Controllers
 
             return Ok(stockList);
         }
+        [HttpGet("getAvg/{companyId}")]
+        public async Task<IActionResult> GetStocksAug(string companyId)
+        {
+            var stockList = await _stockProcessor.GetStockByCompanyIdAsync(companyId);
+            if (stockList is null)
+            {
+                return NotFound();
+            }
+            var stockAvg = new StockAvg()
+            {
+                Max = stockList.Max(x => x.StockPrice).ToString(),
+                Min = stockList.Min(x => x.StockPrice).ToString(),
+                Avg = stockList.Average(x => x.StockPrice).ToString()
+            };
+            return Ok(stockAvg);
+        }
         [HttpGet("get/{companyId}")]
         public async Task<IActionResult> GetStocksByCompanyId(string companyId)
         {
