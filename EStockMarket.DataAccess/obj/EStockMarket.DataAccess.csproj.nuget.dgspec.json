@@ -1,21 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "C:\\EStockAPI\\EStockMarket\\EStockMarket.DataAccess\\EStockMarket.DataAccess.csproj": {}
+    "D:\\EStockMarket\\EStockMarket.DataAccess\\EStockMarket.DataAccess.csproj": {}
   },
   "projects": {
-    "C:\\EStockAPI\\EStockMarket\\EStockMarket.DataAccess\\EStockMarket.DataAccess.csproj": {
+    "D:\\EStockMarket\\EStockMarket.DataAccess\\EStockMarket.DataAccess.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\EStockAPI\\EStockMarket\\EStockMarket.DataAccess\\EStockMarket.DataAccess.csproj",
+        "projectUniqueName": "D:\\EStockMarket\\EStockMarket.DataAccess\\EStockMarket.DataAccess.csproj",
         "projectName": "EStockMarket.DataAccess",
-        "projectPath": "C:\\EStockAPI\\EStockMarket\\EStockMarket.DataAccess\\EStockMarket.DataAccess.csproj",
-        "packagesPath": "C:\\Users\\609725\\.nuget\\packages\\",
-        "outputPath": "C:\\EStockAPI\\EStockMarket\\EStockMarket.DataAccess\\obj\\",
+        "projectPath": "D:\\EStockMarket\\EStockMarket.DataAccess\\EStockMarket.DataAccess.csproj",
+        "packagesPath": "C:\\Users\\cogdotnet518\\.nuget\\packages\\",
+        "outputPath": "D:\\EStockMarket\\EStockMarket.DataAccess\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\609725\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\cogdotnet518\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -28,8 +34,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\EStockAPI\\EStockMarket\\EStockMarket.Model\\EStockMarket.Model.csproj": {
-                "projectPath": "C:\\EStockAPI\\EStockMarket\\EStockMarket.Model\\EStockMarket.Model.csproj"
+              "D:\\EStockMarket\\EStockMarket.Model\\EStockMarket.Model.csproj": {
+                "projectPath": "D:\\EStockMarket\\EStockMarket.Model\\EStockMarket.Model.csproj"
               }
             }
           }
@@ -68,22 +74,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\EStockAPI\\EStockMarket\\EStockMarket.Model\\EStockMarket.Model.csproj": {
+    "D:\\EStockMarket\\EStockMarket.Model\\EStockMarket.Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\EStockAPI\\EStockMarket\\EStockMarket.Model\\EStockMarket.Model.csproj",
+        "projectUniqueName": "D:\\EStockMarket\\EStockMarket.Model\\EStockMarket.Model.csproj",
         "projectName": "EStockMarket.Model",
-        "projectPath": "C:\\EStockAPI\\EStockMarket\\EStockMarket.Model\\EStockMarket.Model.csproj",
-        "packagesPath": "C:\\Users\\609725\\.nuget\\packages\\",
-        "outputPath": "C:\\EStockAPI\\EStockMarket\\EStockMarket.Model\\obj\\",
+        "projectPath": "D:\\EStockMarket\\EStockMarket.Model\\EStockMarket.Model.csproj",
+        "packagesPath": "C:\\Users\\cogdotnet518\\.nuget\\packages\\",
+        "outputPath": "D:\\EStockMarket\\EStockMarket.Model\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\609725\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\cogdotnet518\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -122,7 +134,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.406\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

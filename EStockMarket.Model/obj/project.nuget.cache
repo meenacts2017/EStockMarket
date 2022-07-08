@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ak/hHM23Mzl/xYEYeSt/+7I/oPUSHg2pR1sww5P+Vg9WXOJWR4yCbHu5VFzIPwg4dCLLATEX1ZpNf3qWg/wR8Q==",
+  "dgSpecHash": "7P2KEI1E9wYD0tCXs8s/GcqLiYipZc8YK2Wg56m4191WgMaCixcLVpH/l2t263DwfK5SGi4VYHWOmu/6gPCcfA==",
   "success": true,
-  "projectFilePath": "C:\\EStockAPI\\EStockMarket\\EStockMarket.Model\\EStockMarket.Model.csproj",
+  "projectFilePath": "D:\\EStockMarket\\EStockMarket.Model\\EStockMarket.Model.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
