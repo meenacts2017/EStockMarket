@@ -14,6 +14,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -47,7 +48,9 @@ namespace EStockMarket
                     .AddTransient<IStocks, StocksData>()
                     .AddTransient<ICompanyProcessor, CompanyProcessor>()
                     .AddTransient<IStocksProcessor, StocksProcessor>();
-
+            services.AddSwaggerGen(
+                x=>x.SwaggerDoc("v1", new OpenApiInfo{ Title = "E-StockMarket", Version ="v1"  })
+                ); ;
 
             //services.AddControllersWithViews().AddNewtonsoftJson(options =>
             //options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
@@ -64,8 +67,19 @@ namespace EStockMarket
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
+                app.UseSwagger();
+                
+                app.UseSwaggerUI(c =>
+                {
+                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "E-StockMarket");
+                });
             }
-
+            //app.UseSwagger();
+           
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "E-StockMarket");
+            });
             app.UseHttpsRedirection();
 
             app.UseRouting();
@@ -76,6 +90,7 @@ namespace EStockMarket
             {
                 endpoints.MapControllers();
             });
+            
         }
     }
 }

@@ -10,8 +10,8 @@ using System.Threading.Tasks;
 
 namespace EStockMarket.Controllers
 {
-    [Route("/api/v1.0/market/[controller]")]
     [ApiController]
+    [Route("/api/v1.0/market/[controller]")]    
     public class CompanyController : ControllerBase
     {
         private readonly ICompanyProcessor _companyProcessor;
@@ -42,7 +42,8 @@ namespace EStockMarket.Controllers
             return Ok(companyList);
         }
 
-        [HttpGet("info/{id}")]
+        [HttpGet]
+        [Route("info/{id}")]
         public async Task<IActionResult> GetCompany(string id)
         {
             var result = await _companyProcessor.GetCompanyByIdAsync(id);
@@ -55,7 +56,8 @@ namespace EStockMarket.Controllers
         }
 
         // DELETE api/<CompanyController>/5
-        [HttpDelete("delete/{id}")]
+        [HttpDelete]
+        [Route("delete/{id}")]
         public async Task<IActionResult> Delete(string id)
         {
             await _companyProcessor.DeleteCompanyAsync(id);
