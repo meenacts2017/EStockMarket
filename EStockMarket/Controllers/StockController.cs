@@ -20,29 +20,29 @@ namespace EStockMarket.Controllers
             _stockProcessor = stocksProcessor;
         }
 
-        [HttpPost("add/{id}")]
-        public async Task<IActionResult> Post([FromBody] Stocks value, string id)
+        [HttpPost("add/{companycode}")]
+        public async Task<IActionResult> Post([FromBody] Stocks value, string companycode)
         {
-            value.CompanyId = id;
+            value.CompanyId = companycode;
             await _stockProcessor.AddStockAsync(value);
             return Ok();
         }
 
-        [HttpGet("get/{companyId}/{startDate}/{endDate}")]
-        public async Task<IActionResult> GetStocks(string companyId, DateTime startDate, DateTime endDate)
+        [HttpGet("get/{companycode}/{startdate}/{enddate}")]
+        public async Task<IActionResult> GetStocks(string companycode, DateTime startDate, DateTime endDate)
         {
-            var stockList = await _stockProcessor.GetStocksByIdAndDate(companyId, startDate, endDate);
+            var stockList = await _stockProcessor.GetStocksByIdAndDate(companycode, startDate, endDate);
             if (stockList is null)
             {
                 return NotFound();
             }
-
+            
             return Ok(stockList);
         }
-        [HttpGet("getAvg/{companyId}")]
-        public async Task<IActionResult> GetStocksAug(string companyId)
+        [HttpGet("getAvg/{companycode}/{startdate}/{enddate}")]
+        public async Task<IActionResult> GetStocksAug(string companycode, DateTime startDate, DateTime endDate)
         {
-            var stockList = await _stockProcessor.GetStockByCompanyIdAsync(companyId);
+            var stockList = await _stockProcessor.GetStocksByIdAndDate(companycode, startDate, endDate); 
             if (stockList is null)
             {
                 return NotFound();

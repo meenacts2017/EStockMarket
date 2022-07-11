@@ -30,7 +30,7 @@ namespace EStockMarket.Controllers
         }
 
         [HttpGet]
-        [Route("GetAll")]
+        [Route("getall")]
         public async Task<IActionResult> GetAll()
         {
             var companyList = await _companyProcessor.GetAllCompanyAsync();
@@ -43,10 +43,10 @@ namespace EStockMarket.Controllers
         }
 
         [HttpGet]
-        [Route("info/{id}")]
-        public async Task<IActionResult> GetCompany(string id)
+        [Route("info/{companycode}")]
+        public async Task<IActionResult> GetCompany(string companycode)
         {
-            var result = await _companyProcessor.GetCompanyByIdAsync(id);
+            var result = await _companyProcessor.GetCompanyByIdAsync(companycode);
             if (result is null)
             {
                 return NotFound();
@@ -57,10 +57,10 @@ namespace EStockMarket.Controllers
 
         // DELETE api/<CompanyController>/5
         [HttpDelete]
-        [Route("delete/{id}")]
-        public async Task<IActionResult> Delete(string id)
+        [Route("delete/{companycode}")]
+        public async Task<IActionResult> Delete(string companycode)
         {
-            await _companyProcessor.DeleteCompanyAsync(id);
+            await _companyProcessor.DeleteCompanyAsync(companycode);
             return Ok();
         }
     }

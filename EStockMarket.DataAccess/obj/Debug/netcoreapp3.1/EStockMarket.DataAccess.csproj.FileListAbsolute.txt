@@ -21,6 +21,5 @@ D:\EStockMarket\EStockMarket.DataAccess\obj\Debug\netcoreapp3.1\EStockMarket.Dat
 D:\EStockMarket\EStockMarket.DataAccess\obj\Debug\netcoreapp3.1\EStockMarket.DataAccess.AssemblyInfoInputs.cache
 D:\EStockMarket\EStockMarket.DataAccess\obj\Debug\netcoreapp3.1\EStockMarket.DataAccess.AssemblyInfo.cs
 D:\EStockMarket\EStockMarket.DataAccess\obj\Debug\netcoreapp3.1\EStockMarket.DataAccess.csproj.CoreCompileInputs.cache
-D:\EStockMarket\EStockMarket.DataAccess\obj\Debug\netcoreapp3.1\EStockMarket.DataAccess.csproj.CopyComplete
 D:\EStockMarket\EStockMarket.DataAccess\obj\Debug\netcoreapp3.1\EStockMarket.DataAccess.dll
 D:\EStockMarket\EStockMarket.DataAccess\obj\Debug\netcoreapp3.1\EStockMarket.DataAccess.pdb

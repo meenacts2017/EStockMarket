@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EStockMarket.Business", "ES
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EStockMarket.Model", "EStockMarket.Model\EStockMarket.Model.csproj", "{59E5C049-167C-4D29-A2D8-358E2B5EA7EE}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gateway.WebApi", "Gateway.WebApi\Gateway.WebApi.csproj", "{160D0B53-6944-4589-9957-05D678023A71}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{59E5C049-167C-4D29-A2D8-358E2B5EA7EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59E5C049-167C-4D29-A2D8-358E2B5EA7EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59E5C049-167C-4D29-A2D8-358E2B5EA7EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{160D0B53-6944-4589-9957-05D678023A71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{160D0B53-6944-4589-9957-05D678023A71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{160D0B53-6944-4589-9957-05D678023A71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{160D0B53-6944-4589-9957-05D678023A71}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
