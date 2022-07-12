@@ -118,3 +118,4 @@ D:\EStockMarket\EStockMarket\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swag
 D:\EStockMarket\EStockMarket\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\EStockMarket\EStockMarket\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 D:\EStockMarket\EStockMarket\obj\Debug\netcoreapp3.1\EStockMarket.MvcApplicationPartsAssemblyInfo.cs
+D:\EStockMarket\EStockMarket\obj\Debug\netcoreapp3.1\EStockMarket.csproj.CopyComplete
