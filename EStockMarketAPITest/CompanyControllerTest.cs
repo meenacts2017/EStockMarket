@@ -41,7 +41,7 @@ namespace EStockMarketAPITest
 
             //Assert
             Assert.IsNotNull(actualResult);
-            OkResult OkResult = actualResult.Result as OkResult;
+            OkObjectResult OkResult = actualResult.Result as OkObjectResult;
             Assert.AreEqual(200, OkResult.StatusCode);
            
         }
@@ -122,7 +122,7 @@ namespace EStockMarketAPITest
 
             //Assert
             Assert.IsNotNull(actualResult);
-            OkResult OkResult = actualResult.Result as OkResult;
+            OkObjectResult OkResult = actualResult.Result as OkObjectResult;
             Assert.AreEqual(200, OkResult.StatusCode);
 
         }

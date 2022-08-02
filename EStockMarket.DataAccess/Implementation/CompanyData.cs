@@ -37,12 +37,12 @@ namespace EStockMarket.DataAccess.Implementation
 
         public async Task<Model.Company> GetCompanyByIdAsync(string id)
         {
-            return await _companyCollection.Find(x => x.Code == id).FirstOrDefaultAsync();
+            return await _companyCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
         }
 
         public async Task DeleteCompanyAsync(string id)
         {
-            await _companyCollection.DeleteOneAsync(x => x.Code == id);
+            await _companyCollection.DeleteOneAsync(x => x.Id == id);
         }
     }
 }

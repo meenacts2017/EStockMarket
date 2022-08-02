@@ -11,10 +11,10 @@ C:\EStockAPI\EStockMarket\EStockMarket.Model\obj\Debug\netcoreapp3.1\EStockMarke
 D:\EStockMarket\EStockMarket.Model\bin\Debug\netcoreapp3.1\EStockMarket.Model.deps.json
 D:\EStockMarket\EStockMarket.Model\bin\Debug\netcoreapp3.1\EStockMarket.Model.dll
 D:\EStockMarket\EStockMarket.Model\bin\Debug\netcoreapp3.1\EStockMarket.Model.pdb
-D:\EStockMarket\EStockMarket.Model\obj\Debug\netcoreapp3.1\EStockMarket.Model.csproj.AssemblyReference.cache
 D:\EStockMarket\EStockMarket.Model\obj\Debug\netcoreapp3.1\EStockMarket.Model.GeneratedMSBuildEditorConfig.editorconfig
 D:\EStockMarket\EStockMarket.Model\obj\Debug\netcoreapp3.1\EStockMarket.Model.AssemblyInfoInputs.cache
 D:\EStockMarket\EStockMarket.Model\obj\Debug\netcoreapp3.1\EStockMarket.Model.AssemblyInfo.cs
 D:\EStockMarket\EStockMarket.Model\obj\Debug\netcoreapp3.1\EStockMarket.Model.csproj.CoreCompileInputs.cache
 D:\EStockMarket\EStockMarket.Model\obj\Debug\netcoreapp3.1\EStockMarket.Model.dll
 D:\EStockMarket\EStockMarket.Model\obj\Debug\netcoreapp3.1\EStockMarket.Model.pdb
+D:\EStockMarket\EStockMarket.Model\obj\Debug\netcoreapp3.1\EStockMarket.Model.csproj.AssemblyReference.cache

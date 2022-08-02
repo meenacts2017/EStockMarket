@@ -14,10 +14,12 @@ namespace EStockMarket.Controllers
     public class StockController : ControllerBase
     {
         private readonly IStocksProcessor _stockProcessor;
+        private readonly ICompanyProcessor _companyProcessor;
 
-        public StockController(IStocksProcessor stocksProcessor)
+        public StockController(IStocksProcessor stocksProcessor, ICompanyProcessor companyProcessor)
         {
             _stockProcessor = stocksProcessor;
+            _companyProcessor = companyProcessor;
         }
 
         [HttpPost("add/{companycode}")]
@@ -25,7 +27,7 @@ namespace EStockMarket.Controllers
         {
             value.CompanyId = companycode;
             await _stockProcessor.AddStockAsync(value);
-            return Ok();
+            return Ok(1);
         }
 
         [HttpGet("get/{companycode}/{startdate}/{enddate}")]
@@ -40,19 +42,22 @@ namespace EStockMarket.Controllers
             return Ok(stockList);
         }
         [HttpGet("getAvg/{companycode}/{startdate}/{enddate}")]
-        public async Task<IActionResult> GetStocksAug(string companycode, DateTime startDate, DateTime endDate)
+        public async Task<IActionResult> GetStocksAvg(string companycode, DateTime startDate, DateTime endDate)
         {
             var stockList = await _stockProcessor.GetStocksByIdAndDate(companycode, startDate, endDate); 
-            if (stockList is null)
-            {
-                return NotFound();
-            }
+           
+            var companyinfo = await _companyProcessor.GetCompanyByIdAsync(companycode);
             var stockAvg = new StockAvg()
             {
-                Max = stockList.Max(x => x.StockPrice).ToString(),
-                Min = stockList.Min(x => x.StockPrice).ToString(),
-                Avg = stockList.Average(x => x.StockPrice).ToString()
+                Code = companyinfo.Code,
+                Name = companyinfo.Name,
             };
+            if(stockList.Count>0)
+            {
+                stockAvg.Max = stockList.Max(x => x.StockPrice).ToString("F");
+                stockAvg.Min = stockList.Min(x => x.StockPrice).ToString("F");
+                stockAvg.Avg = stockList.Average(x => x.StockPrice).ToString("F");
+            }
             return Ok(stockAvg);
         }
         [HttpGet("get/{companyId}")]

@@ -26,7 +26,7 @@ namespace EStockMarket.Controllers
         public async Task<IActionResult> Post([FromBody] Company value)
         {
             await _companyProcessor.AddCompanyAsync(value);
-            return Ok();
+            return Ok(1);
         }
 
         [HttpGet]
@@ -61,7 +61,12 @@ namespace EStockMarket.Controllers
         public async Task<IActionResult> Delete(string companycode)
         {
             await _companyProcessor.DeleteCompanyAsync(companycode);
-            return Ok();
+            List<string> message = new List<string>()
+            {
+                "Company deleted successfully",
+                "1"
+            };
+            return Ok(message);
         }
     }
 }

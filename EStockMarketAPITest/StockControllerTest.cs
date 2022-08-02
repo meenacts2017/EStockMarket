@@ -14,13 +14,15 @@ namespace EStockMarketAPITest
     public class StockControllerTest
     {
         private Mock<IStocksProcessor> _stocksProcessor;
+        private Mock<ICompanyProcessor> _companyProcessor;
         private StockController stockController;
 
         [SetUp]
         public void Setup()
         {
             _stocksProcessor = new Mock<IStocksProcessor>();
-            stockController = new StockController(_stocksProcessor.Object);
+            _companyProcessor = new Mock<ICompanyProcessor>();
+            stockController = new StockController(_stocksProcessor.Object, _companyProcessor.Object);
         }
 
         [Test]
@@ -38,7 +40,7 @@ namespace EStockMarketAPITest
 
             //Assert
             Assert.IsNotNull(actualResult);
-            OkResult OkResult = actualResult.Result as OkResult;
+            OkObjectResult OkResult = actualResult.Result as OkObjectResult;
             Assert.AreEqual(200, OkResult.StatusCode);
         }
 
@@ -87,10 +89,22 @@ namespace EStockMarketAPITest
                 EndDate = DateTime.Now
             }
             };
+            var companyData = new Company()
+            {
+                Id = "FirstData",
+                Code = "CompanyCode",
+                Name = "CompanyName",
+                StockExchange = "BSE",
+                CEO = "CompanyCEO",
+                WebSite = "CompanySite",
+                TurnOver = 100
+            };
             _stocksProcessor.Setup(x => x.GetStocksByIdAndDate(It.IsAny<string>(), It.IsAny<DateTime>(), It.IsAny<DateTime>()))
                 .Returns(Task.FromResult(listStocks));
+            _companyProcessor.Setup(x => x.GetCompanyByIdAsync(It.IsAny<string>())).Returns(Task.FromResult(companyData));
+
             //Act
-            var actualResult = stockController.GetStocksAug("CompanyCode", DateTime.Now, DateTime.Now);
+            var actualResult = stockController.GetStocksAvg("CompanyCode", DateTime.Now, DateTime.Now);
 
             //Assert
             Assert.IsNotNull(actualResult);
