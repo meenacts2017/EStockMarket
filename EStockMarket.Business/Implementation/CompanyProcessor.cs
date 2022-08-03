@@ -14,11 +14,13 @@ namespace EStockMarket.Business.Implementation
         private readonly ICompany _companyData;
         private readonly IMapper _mapper;
         private readonly ILogger<CompanyProcessor> _logger;
-        public CompanyProcessor(ICompany company, IMapper mapper, ILogger<CompanyProcessor> logger)
+        private readonly IStocksProcessor _stocksProcessor;
+        public CompanyProcessor(ICompany company, IMapper mapper, ILogger<CompanyProcessor> logger, IStocksProcessor stocksProcessor)
         {
             _companyData = company;
             _mapper = mapper;
             _logger = logger;
+            _stocksProcessor = stocksProcessor;
         }
         public async Task AddCompanyAsync(Company company)
         {
@@ -68,6 +70,7 @@ namespace EStockMarket.Business.Implementation
         {
             try
             {
+                await _stocksProcessor.DeleteStockAsync(id);
                 await _companyData.DeleteCompanyAsync(id);
             }
             catch (Exception ex)

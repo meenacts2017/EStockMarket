@@ -69,5 +69,19 @@ namespace EStockMarket.Business.Implementation
                 throw;
             }
         }
+
+        public async Task DeleteStockAsync(string companyId)
+        {
+            try
+            {
+                await _stocksData.DeleteStockAsync(companyId);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex.Message);
+                throw;
+            }
+        }
+
     }
 }

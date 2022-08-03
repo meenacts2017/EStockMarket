@@ -12,6 +12,6 @@ namespace EStockMarket.DataAccess.Interface
         Task AddStockAsync(Stocks stocks);  
         Task<List<Stocks>> GetStockByCompanyIdAsync(string id);
         Task<List<Stocks>> GetStocksByIdAndDate(string id, DateTime startDate, DateTime endDate);
-
+        Task DeleteStockAsync(string companyId);
     }
 }

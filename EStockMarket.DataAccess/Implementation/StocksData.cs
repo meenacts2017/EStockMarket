@@ -44,5 +44,10 @@ namespace EStockMarket.DataAccess.Implementation
             return await _stocksCollection.Find(x => x.CompanyId == id &&  x.StartDate >= startDateFilter
             && x.EndDate <= endDateFilter).ToListAsync();
         }
+
+        public async Task DeleteStockAsync(string companyId)
+        {
+            await _stocksCollection.DeleteManyAsync(x => x.CompanyId == companyId);
+        }
     }
 }
