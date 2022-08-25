@@ -23,3 +23,4 @@ D:\EStockMarket\EStockMarket.DataAccess\obj\Debug\netcoreapp3.1\EStockMarket.Dat
 D:\EStockMarket\EStockMarket.DataAccess\obj\Debug\netcoreapp3.1\EStockMarket.DataAccess.csproj.CoreCompileInputs.cache
 D:\EStockMarket\EStockMarket.DataAccess\obj\Debug\netcoreapp3.1\EStockMarket.DataAccess.dll
 D:\EStockMarket\EStockMarket.DataAccess\obj\Debug\netcoreapp3.1\EStockMarket.DataAccess.pdb
+D:\EStockMarket\EStockMarket.DataAccess\obj\Debug\netcoreapp3.1\EStockMarket.DataAccess.csproj.CopyComplete

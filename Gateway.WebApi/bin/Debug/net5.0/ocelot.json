@@ -1,0 +1,88 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/v1.0/market/Company/register",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estockmarketapi.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/market/Company/register",
+      "UpstreamHttpMethod": [ "POST" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/market/Company/info/{companycode}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estockmarketapi.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/market/Company/info/{companycode}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/market/Company/getall",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estockmarketapi.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/market/Company/getall",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/market/Company/delete/{companycode}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estockmarketapi.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/market/Company/delete/{companycode}",
+      "UpstreamHttpMethod": [ "DELETE" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/market/Stock/get/{companycode}/{startdate}/{enddate}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estockmarketapi.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/market/Stock/get/{companycode}/{startdate}/{enddate}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/market/Stock/getAvg/{companycode}/{startdate}/{enddate}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estockmarketapi.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/market/Stock/getAvg/{companycode}/{startdate}/{enddate}",
+      "UpstreamHttpMethod": [ "GET" ]
+    },
+    {
+      "DownstreamPathTemplate": "/api/v1.0/market/Stock/add/{companycode}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "estockmarketapi.azurewebsites.net",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/v1.0/market/Stock/add/{companycode}",
+      "UpstreamHttpMethod": [ "POST" ]
+    }
+  ]
+}

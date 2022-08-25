@@ -122,4 +122,3 @@ D:\EStockMarket\EStockMarket\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPa
 D:\EStockMarket\EStockMarket\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\EStockMarket\EStockMarket\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\EStockMarket\EStockMarket\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
-D:\EStockMarket\EStockMarket\obj\Debug\netcoreapp3.1\EStockMarket.csproj.CopyComplete

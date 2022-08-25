@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Uyy8z74nW9BRFwm47njB2p5EboGxqQ9VMLyswPiu0Is9/DOBSp0e5vMnfJHbPO+qIUHoYGYRovO96xvBcmQdRw==",
+  "dgSpecHash": "wxRxSorL7sDmM5jrwZFm/Yfym/jau4S6lEGShxqTpguJO4Iy7cN6k53OKAGDLhrxFLZl4lu0j9V31aAdpD3x9w==",
   "success": true,
   "projectFilePath": "D:\\EStockMarket\\EStockMarketAPITest\\EStockMarketAPITest.csproj",
   "expectedPackageFiles": [
@@ -25,6 +25,7 @@
     "C:\\Users\\cogdotnet518\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\cogdotnet518\\.nuget\\packages\\microsoft.testplatform.objectmodel\\16.9.4\\microsoft.testplatform.objectmodel.16.9.4.nupkg.sha512",
     "C:\\Users\\cogdotnet518\\.nuget\\packages\\microsoft.testplatform.testhost\\16.9.4\\microsoft.testplatform.testhost.16.9.4.nupkg.sha512",
+    "C:\\Users\\cogdotnet518\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\cogdotnet518\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\cogdotnet518\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\cogdotnet518\\.nuget\\packages\\mongodb.bson\\2.16.1\\mongodb.bson.2.16.1.nupkg.sha512",

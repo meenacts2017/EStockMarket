@@ -50,7 +50,7 @@ namespace EStockMarket
                     .AddTransient<ICompanyProcessor, CompanyProcessor>()
                     .AddTransient<IStocksProcessor, StocksProcessor>();
             services.AddSwaggerGen(
-                x=>x.SwaggerDoc("v1", new OpenApiInfo{ Title = "E-StockMarket", Version ="v1"  })
+                x=>x.SwaggerDoc("v1", new OpenApiInfo{ Title = "EStock.Api", Version ="v1"  })
                 ); ;
 
             services.AddControllersWithViews().AddNewtonsoftJson(options =>
@@ -69,18 +69,22 @@ namespace EStockMarket
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseSwagger();
+                //app.UseSwagger();
                 
-                app.UseSwaggerUI(c =>
-                {
-                    c.SwaggerEndpoint("/swagger/v1/swagger.json", "E-StockMarket");
-                });
+                //app.UseSwaggerUI(c =>
+                //{
+                //    c.SwaggerEndpoint("/swagger/v1/swagger.json", "E-StockMarket");
+                //});
             }
-            //app.UseSwagger();
+            //app.UseSwagger(c =>
+            //{
+            //    c.RouteTemplate = "/swagger/v1/swagger.json";
+            //});
+            app.UseSwagger();
            
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "E-StockMarket");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "EStock.Api v1");
             });
             app.UseHttpsRedirection();
 

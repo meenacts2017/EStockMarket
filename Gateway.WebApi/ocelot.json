@@ -1,12 +1,12 @@
 {
-  "ReRoutes": [
+  "Routes": [
     {
       "DownstreamPathTemplate": "/api/v1.0/market/Company/register",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 36816
+          "Host": "estockmarketapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1.0/market/Company/register",
@@ -14,11 +14,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1.0/market/Company/info/{companycode}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 36816
+          "Host": "estockmarketapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1.0/market/Company/info/{companycode}",
@@ -26,11 +26,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1.0/market/Company/getall",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 36816
+          "Host": "estockmarketapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1.0/market/Company/getall",
@@ -38,11 +38,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1.0/market/Company/delete/{companycode}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 36816
+          "Host": "estockmarketapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1.0/market/Company/delete/{companycode}",
@@ -50,11 +50,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1.0/market/Stock/get/{companycode}/{startdate}/{enddate}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 36816
+          "Host": "estockmarketapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1.0/market/Stock/get/{companycode}/{startdate}/{enddate}",
@@ -62,11 +62,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1.0/market/Stock/getAvg/{companycode}/{startdate}/{enddate}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 36816
+          "Host": "estockmarketapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1.0/market/Stock/getAvg/{companycode}/{startdate}/{enddate}",
@@ -74,11 +74,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/v1.0/market/Stock/add/{companycode}",
-      "DownstreamScheme": "http",
+      "DownstreamScheme": "https",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 36816
+          "Host": "estockmarketapi.azurewebsites.net",
+          "Port": 443
         }
       ],
       "UpstreamPathTemplate": "/api/v1.0/market/Stock/add/{companycode}",

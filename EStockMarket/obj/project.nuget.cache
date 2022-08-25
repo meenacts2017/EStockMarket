@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oFFRxUaGP00bgQwGnYbxBaVrt/RGYOHW/dsg7qi/Vme0yzojGVxKtoLVHvwVil4V34oV1i9xOc/Fs6fhMbFjuA==",
+  "dgSpecHash": "KUzBg/cxY+qvfrQ9ijCYqHok43RS0AjzgTGWKrL/03Qb5RX7PpcuOCp8g7tq0SZ3tBJGCnRfMdVRWp/gA5pacA==",
   "success": true,
   "projectFilePath": "D:\\EStockMarket\\EStockMarket\\EStockMarket.csproj",
   "expectedPackageFiles": [
@@ -17,6 +17,7 @@
     "C:\\Users\\cogdotnet518\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
     "C:\\Users\\cogdotnet518\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\cogdotnet518\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\cogdotnet518\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\cogdotnet518\\.nuget\\packages\\microsoft.win32.registry\\5.0.0\\microsoft.win32.registry.5.0.0.nupkg.sha512",
     "C:\\Users\\cogdotnet518\\.nuget\\packages\\mongodb.bson\\2.16.1\\mongodb.bson.2.16.1.nupkg.sha512",
     "C:\\Users\\cogdotnet518\\.nuget\\packages\\mongodb.driver\\2.16.1\\mongodb.driver.2.16.1.nupkg.sha512",
